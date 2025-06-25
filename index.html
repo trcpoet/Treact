@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treact</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/c1c420070d.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="script.js"></script>
   </head>
 
   <body>
@@ -49,7 +48,7 @@
                 </svg>
             </button>
             <div class="modal__links">
-                <a class="modal__link">About</a>
+                <button onclick="closeMenu()" ><a class="modal__link" href="#features" >About</a></button>
                 <a class="modal__link">Blog</a>
                 <a class="modal__link">Pricing</a>
                 <a class="modal__link">Contact Us</a>
@@ -74,7 +73,7 @@
                   class="header__email--input"
                   placeholder="Your E-mail Address"
                 />
-                <button class="header__email--btn">Get Started</button>
+                  <button class="header__email--btn">Get Started</button>
               </div>
               <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
               <img
@@ -514,8 +513,7 @@
 
                     <div class="testimonials__description">
                         <div class="section__tag">testimonials</div>
-                        <h2 class="section__title">Our Clients <span class="purple">Love Us.</span>
-                        </h2>
+                        <h2 class="section__title">Our Clients <span class="purple">Love Us.</span></h2>
                         <p class="section__para">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua enim ad minim veniam.
@@ -651,14 +649,17 @@
             <div class="footer__divider"></div>
             <div class="footer__bottom">
                 <div class="footer__logo">
+                  <a href="#" class="footer__logo--link" aria-label="Back to top of page">
                     <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="" class="footer__logo--img">
                     <h5 class="footer__logo--text">Treact Inc.</h5>
+                  </a>
+
                 </div>
                 <div class="footer__copyright">
                     © 2018 Treact Inc. All Rights Reserved.
                 </div>
                 <div class="footer__socials">
-                    <a class="footer__social--link">
+                    <a href="https://www.facebook.com/trcpoet" target="_blank" class="footer__social--link">
                         <svg fill="currentColor" viewBox="0 0 24 24">
                             <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z">
                             </path>
